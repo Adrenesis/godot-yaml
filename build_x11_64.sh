@@ -1,6 +1,6 @@
 #!/bin/bash
 cd godot-cpp/
-scons platform=linux target=release generate_bindings=yes
+scons platform=linux target=release generate_bindings=yes $1
 cd ..
 
 mkdir yaml-cpp_install
@@ -21,5 +21,5 @@ cp ./libyaml-cpp.so ./../../demo/addons/godot-yaml/x11/libyaml-cpp.so
 
 cd ..
 cd ..
-scons platform=linux target=release
+scons platform=linux target=release $1
 strip ./demo/addons/godot-yaml/x11/libgodotyaml.so
