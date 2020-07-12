@@ -5,7 +5,7 @@ target = ARGUMENTS.get("target", "debug").lower()
 platform = ARGUMENTS.get("platform", "windows").lower()
 bits = ARGUMENTS.get("bits", "64")
 
-final_lib_path = 'demo/bin/'
+final_lib_path = 'demo/addons/godot-yaml/'
 
 # This makes sure to keep the session environment variables on windows, 
 # that way you can run scons in a vs 2017 prompt and it will find all the required tools

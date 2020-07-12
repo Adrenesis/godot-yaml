@@ -1,0 +1,20 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="godot_"
+reloadable=true
+
+[entry]
+
+OSX.64="res://addons/godot-yaml/osx/libgodotyaml.dylib"
+Windows.64="res://addons/godot-yaml/win64/libgodotyaml.dll"
+Windows.32="res://addons/godot-yaml/win32/libgodotyaml.dll"
+X11.64="res://addons/godot-yaml/x11/libgodotyaml.so"
+
+[dependencies]
+
+OSX.64=[  ]
+Windows.64=[  ]
+Windows.32=[  ]
+X11.64=[ "res://addons/godot-yaml/x11/lib/libyaml-cpp.so.0.6.2" ]

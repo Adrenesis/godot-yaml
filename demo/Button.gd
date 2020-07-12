@@ -5,9 +5,9 @@ extends Button
 var yaml
 
 func _ready():
-    # Called when the node is added to the scene for the first time.
-    # Initialization here
-    yaml = preload("res://bin/gdyaml.gdns").new()
+	# Called when the node is added to the scene for the first time.
+	# Initialization here
+	yaml = preload("res://addons/godot-yaml/gdyaml.gdns").new()
 
 #func _process(delta):
 #    # Called every frame. Delta is time since last frame.
